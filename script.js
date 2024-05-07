@@ -34,9 +34,10 @@ function clear() {
 function gameLoop() {
   move(); 
   draw();
+  alert("done")
   setTimeout(clear, 1000);
 }
 
 while (true) {
-  gameLoop();
+  setTimeout(gameLoop(), 1000);
 }
