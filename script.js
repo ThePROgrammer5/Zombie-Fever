@@ -1,7 +1,10 @@
 var direction = 90;
 
-var centerX = ctx.canvas.width/2
-var centerY = ctx.canvas.height/2
+var canvasWidth = ctx.canvas.width;
+var canvasHeight = ctx.canvas.height;
+
+var centerX = ctx.canvas.width/2;
+var centerY = ctx.canvas.height/2;
 
 var player = document.getElementById("playerSprite");
 var zombie = document.getElementById("zombieSprite");
@@ -14,7 +17,7 @@ function draw() {
      var ctx = canvas.getContext('2d');
      var centerX = 130;
      var centerY = 50;
-     ctx.rotate(direction*Math.PI/180)
+     ctx.rotate(direction*Math.PI/180);
      ctx.drawImage(player, centerX, centerY, 60, 50);
   }
 }
@@ -24,7 +27,7 @@ function move() {
 }
 
 function clear() {
- context.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+ context.clearRect(0, 0, canvasWidth, canvasHeight);
 }
 
 function gameLoop() {
