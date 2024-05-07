@@ -35,7 +35,7 @@ function gameLoop() {
   move(); 
   drawPlayer();
   alert("done");
-  setTimeout(clear, 1000);
+  //setTimeout(clear, 1000);
 }
 
 while (true) {
