@@ -12,7 +12,7 @@ var zombie = document.getElementById("zombieSprite");
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
-function draw() {
+function drawPlayer() {
   if (canvas.getContext) {
      var ctx = canvas.getContext('2d');
      var centerX = 130;
@@ -33,7 +33,7 @@ function clear() {
 
 function gameLoop() {
   move(); 
-  draw();
+  drawPlayer();
   alert("done");
   setTimeout(clear, 1000);
 }
