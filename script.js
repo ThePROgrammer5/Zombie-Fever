@@ -19,6 +19,7 @@ function draw() {
      var centerY = 50;
      ctx.rotate(direction*Math.PI/180);
      ctx.drawImage(player, centerX, centerY, 60, 50);
+     alert("done!")
   }
 }
 
